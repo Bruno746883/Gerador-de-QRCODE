@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>QR Code Gerado</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+<h1>Resultado</h1>
+
+
+<div class="imagens">
+<div>
+<h2>Imagem Enviada</h2>
+<img src="{{ imagem_original }}" alt="Imagem Original">
+</div>
+<div>
+<h2>QR Code</h2>
+<img src="{{ qrcode }}" alt="QR Code">
+</div>
+</div>
+
+
+<p>O QR Code leva diretamente para a imagem hospedada no servidor.</p>
+</div>
+</body>
+</html>
